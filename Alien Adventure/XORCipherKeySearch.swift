@@ -27,17 +27,30 @@ extension Hero {
             
             for character in encryptedString {
                 // ADD CODE: perform decryption
-                print(character)
+                
+              //  print(character)
+                print("************")
+                
+                decrypted.append(character ^ x)
+                
+
             }
             
             if let decryptedString = String(bytes: decrypted,
                 encoding: NSUTF8StringEncoding) where decryptedString == "udacity" {
                     // ADD CODE: found match, now what?
+                
+                   key = x
+                
+                }
+                
             }
-        }
+        
         
         return key
+        
     }
+    
 }
 
 // If you have completed this function and it is working correctly, feel free to skip this part of the adventure by opening the "Under the Hood" folder, and making the following change in Settings.swift: "static var RequestsToSkip = 3"

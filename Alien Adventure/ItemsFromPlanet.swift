@@ -9,9 +9,34 @@
 extension Hero {
     
     func itemsFromPlanet(inventory: [UDItem], planet: String) -> [UDItem] {
-        return [UDItem]()
+        
+        var items = [UDItem]()
+        
+        for item in inventory{
+            
+                if let original = item.historicalData["PlanetOfOrigin"] as? String{
+                    
+                        if original == planet {
+                             items.append(item)
+                            // print(items.count)
+                           // print(item.historicalData)
+                        }
+                
+                } else {
+            
+                    print("No PlannetOfOriginal data!")
+            
+                }
+            
+        }
+        
+        
+        return items
+        
     }
-    
+
 }
+
+
 
 // If you have completed this function and it is working correctly, feel free to skip this part of the adventure by opening the "Under the Hood" folder, and making the following change in Settings.swift: "static var RequestsToSkip = 1"

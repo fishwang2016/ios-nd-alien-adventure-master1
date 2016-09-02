@@ -34,6 +34,7 @@ extension Hero {
                 if s1.containsString(w){
                     
                     s1Temp += w
+                    // string can only plus string , can not plus character
                     
                 } else if s2.containsString(w){
                     
