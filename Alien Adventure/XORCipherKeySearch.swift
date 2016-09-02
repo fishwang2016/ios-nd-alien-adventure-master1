@@ -20,7 +20,7 @@ extension Hero {
         
         for x in UInt8.min..<UInt8.max {
             
-            print(x)
+            //print(x)
             
             var decrypted: [UInt8]
             decrypted = [UInt8]()
@@ -29,7 +29,6 @@ extension Hero {
                 // ADD CODE: perform decryption
                 
               //  print(character)
-                print("************")
                 
                 decrypted.append(character ^ x)
                 
