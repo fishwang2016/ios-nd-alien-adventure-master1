@@ -41,17 +41,12 @@ extension Hero {
                     
                 
             
-            } else{
-                
-               print("No Name data or name not equal to filter.")
-            
             } // if name
             
-            
-        
+    
         } // for loop
         
-        print(banID)
+       // print(banID)
         
         return banID
     
