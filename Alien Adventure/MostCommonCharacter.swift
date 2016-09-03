@@ -12,7 +12,7 @@ extension Hero {
         
         var cDict = [Character: Int]()
         
-        var mostC = Character?()
+        var mostCommon = Character?()
         
         
         for item in inventory{
@@ -27,16 +27,16 @@ extension Hero {
               }
         
         }// for loop
-        print(cDict)
+       // print(cDict)
         
         for (k,v ) in cDict{
         
             if v == cDict.values.maxElement(){
             
-               mostC = k
+               mostCommon = k
             }
         
         }
-        return mostC
+        return mostCommon
     }
 }
